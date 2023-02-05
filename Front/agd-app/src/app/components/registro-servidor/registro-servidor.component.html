@@ -1,0 +1,170 @@
+<app-menu *ngIf="status == 0"></app-menu>
+
+<p-panel header="{{title}}">
+<br>
+
+
+<div class="p-grid p-fluid">
+    <div class="p-col-12 p-md-3">
+        <div class="p-inputgroup">
+            <span class="p-inputgroup-addon">
+                <i class="pi pi-user"></i>
+            </span>
+            <span class="p-float-label">
+                <input id="idColaborador" type="text" pInputText [(ngModel)]="servidor.idColaborador" readonly>
+                <label for="idColaborador">Colaborador</label>
+            </span>
+        </div>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-float-label">
+            
+            <input id="ip" type="text" pInputText [(ngModel)]="servidor.ip" maxlength="15" [readonly] = "!editCampos">
+            <label for="ip">IP</label>
+        </span></div>
+
+    <div class="p-col-12 p-md-3">
+        <span class="p-float-label">
+            
+            <input id="nomServidor" type="text" pInputText [(ngModel)]="servidor.nomServidor" maxlength="100"  [readonly] = "!editCampos">
+            <label for="nomServidor">Nombre del Servidor</label>
+        </span>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-float-label">
+            
+            <input id="soNombre" type="text" pInputText [(ngModel)]="servidor.soNombre" maxlength="30"  [readonly] = "!editCampos">
+            <label for="soNombre">Sistema Operativo</label>
+        </span></div>
+        <div class="p-col-12 p-md-3">
+            <div class="p-field">
+                <label for="idAplicativo">Aplicativo</label>
+                <p-dropdown [options]="itemsApps" [(ngModel)]="servidor.idAplicativo" id="idAplicativo"  [readonly] = "!editCampos">
+                </p-dropdown>
+            </div>
+        </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="puerto">Puerto(S)</label>
+            <input id="puerto" type="text" pInputText [(ngModel)]="servidor.puerto" maxlength="7" [readonly] = "!editCampos">
+            
+        </span></div>
+    
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="sid">SID</label>
+            <input id="sid" type="text" pInputText [(ngModel)]="servidor.sid" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+        
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="esquema">Esquema(S)</label>
+            <input id="esquema" type="text" pInputText [(ngModel)]="servidor.esquema" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+    <div class="p-col-12 p-md-3">
+        <div class="p-field">
+            <label for="idDbms">DBMS</label>
+            <p-dropdown [options]="itemsDbms" [(ngModel)]="servidor.idDbms" id="idDbms" [readonly] = "!editCampos">
+            </p-dropdown>
+        </div>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="verDbms">Versión DBMS</label>
+            <input id="verDbms" type="text" pInputText [(ngModel)]="servidor.verDbms" maxlength="200" [readonly] = "!editCampos">
+            
+        </span>
+    </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="bdUsuario">Usuario(BD)</label>
+            <input id="bdUsuario" type="text" pInputText [(ngModel)]="servidor.bdUsuario" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="bdPassword">Contraseña(BD)</label>
+            <input id="bdPassword" type="text" pInputText [(ngModel)]="servidor.bdPassword" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+        <div class="p-col-12 p-md-3">
+            <div class="p-field">
+                <label for="ambiente">Ambiente</label>
+                <p-dropdown [options]="itemsAmbiente" [(ngModel)]="servidor.ambiente" id="ambiente" [readonly] = "!editCampos">
+                </p-dropdown>
+            </div>
+    
+        </div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="bdUsuarioTipo">Tipo Usuario</label>
+            <input id="bdUsuarioTipo" type="text" pInputText [(ngModel)]="servidor.bdUsuarioTipo" maxlength="100" [readonly] = "!editCampos">
+            
+        </span></div>
+        <div class="p-col-12 p-md-3">
+            <span class="p-field">
+                <label for="observaciones">Observaciones</label>
+                <input id="observaciones" type="text" pInputText [(ngModel)]="servidor.observaciones" maxlength="300" [readonly] = "!editCampos">
+            </span></div>
+        <div class="p-col-12 p-md-3">
+            <span class="p-field">
+                <label for="seRespalda">Se Respalda</label><br>
+                <p-inputSwitch [(ngModel)]="servidor.seRespalda" id="seRespalda"  [readonly] = "!editCampos"></p-inputSwitch>
+            </span>
+        </div>
+    
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="soUsuario">Usuario(SO)</label>
+            <input id="soUsuario" type="text" pInputText [(ngModel)]="servidor.soUsuario" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+    <div class="p-col-12 p-md-3">
+        <span class="p-field">
+            <label for="soPassword">Contraseña(SO)</label>
+            <input id="soPassword" type="text" pInputText [(ngModel)]="servidor.soPassword" maxlength="30" [readonly] = "!editCampos">
+            
+        </span></div>
+    <div class="p-col-12 p-md-6">
+        <div class="p-field">
+            <label for="site">Site</label>
+            <p-dropdown [options]="itemsSite" [(ngModel)]="servidor.site" id="site" [readonly] = "!editCampos">
+            </p-dropdown>
+        </div>
+
+    </div>
+    
+    <div class="p-col-12 p-md-3"  *ngIf="showBtnSave">
+        <span class="p-field">
+            <button pButton type="button" label="Guardar" class="p-button-raised p-button-rounded" icon="pi pi-save" (click)="confirm()"></button>
+        </span>
+    </div>
+    <div class="p-col-12 p-md-3" *ngIf="status == 0">
+        <span class="p-field">
+          <button pButton type="button" label="Limpiar" class="p-button-raised p-button-rounded" icon="pi pi-trash" (click)="limpiar()"></button>
+        </span>
+    </div>
+    <div class="p-col-12 p-md-3" *ngIf="showBtnModif">
+        <span class="p-field">
+            <button pButton type="button" label="Modificar" class="p-button-raised p-button-rounded" icon="pi pi-pencil" (click)="modificar()"></button>
+        </span>
+    </div>
+    <div class="p-col-12 p-md-3"  *ngIf="showBtnSave && status == 1">
+        <span class="p-field">
+            <button pButton type="button" label="Cancelar" class="p-button-raised p-button-rounded" icon="pi pi-times" (click)="cancelar()"></button>
+        </span>
+    </div>
+    
+</div>
+
+
+
+
+<p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"></p-confirmDialog>
+<p-messages [value]="msgs"></p-messages>
+
+
+
+</p-panel>

@@ -1,0 +1,53 @@
+<app-menu></app-menu>
+
+<p-panel header="{{titPantalla}}">
+    
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-3" >
+            <div class="p-field">
+                <label for="claveSeleccionada">{{Labels.LBL_CLAVE}}</label>
+                <p-dropdown [options]="itemsApps" [(ngModel)]="aplicativoSel" id="claveSeleccionada"  [disabled] = "statusPantalla < 2" (onChange)="selApp()">
+                </p-dropdown>
+            </div>
+        </div>
+        <div class="p-col-6 p-md-3" >
+            <span class="p-field">
+                <label for="nombre">{{Labels.LBL_NOMBRE}}</label>
+                <input id="nombre" type="text" pInputText [(ngModel)]="nombre" maxlength="50"  [readonly] = "!editCampos">
+            </span>
+            
+        </div>
+        <div class="p-col-6 p-md-3" >
+            <span class="p-field">
+                <label for="descripcion">{{Labels.LBL_DESCRIPCION}}</label>
+                <input id="descripcion" type="text" pInputText [(ngModel)]="descripcion" maxlength="300"  [readonly] = "!editCampos">
+            </span>
+            
+        </div>
+        
+    </div>
+    <div class="p-grid p-fluid">
+        <div class="p-col-6 p-md-2" *ngIf=" statusPantalla == 0">
+            <span class="p-field">
+              <button pButton type="button" label="{{Labels.BTN_ALTA}}" class="p-button-raised p-button-rounded" icon="pi pi-plus" (click)="alta()"></button>
+            </span>
+        </div>
+        <div class="p-col-6 p-md-2"  *ngIf=" statusPantalla == 0">
+            <span class="p-field">
+                <button pButton type="button" label="{{Labels.BTN_CAMBIO}}" class="p-button-raised p-button-rounded" icon="pi pi-pencil" (click)="cambio()"></button>
+            </span>
+        </div>
+        <div class="p-col-6 p-md-2"  *ngIf=" statusPantalla > 0">
+            <span class="p-field">
+                <button pButton type="button" label="{{Labels.BTN_ACEPTAR}}" class="p-button-raised p-button-rounded" icon="pi pi-save" (click)="confirm()"></button>
+            </span>
+        </div>
+        <div class="p-col-6 p-md-2"  *ngIf=" statusPantalla > 0">
+            <span class="p-field">
+                <button pButton type="button" label="{{Labels.BTN_CANCELAR}}" class="p-button-raised p-button-rounded" icon="pi pi-times" (click)="cancelar()"></button>
+            </span>
+        </div>
+    </div>
+    <p-confirmDialog [style]="{width: '50vw'}" [baseZIndex]="10000"></p-confirmDialog>
+    <p-messages [value]="msgs"></p-messages>
+</p-panel>

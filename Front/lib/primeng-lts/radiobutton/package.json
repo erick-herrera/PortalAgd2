@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-radiobutton.umd.js",
+  "module": "../fesm2015/primeng-lts-radiobutton.js",
+  "es2015": "../fesm2015/primeng-lts-radiobutton.js",
+  "esm2015": "../esm2015/radiobutton/primeng-lts-radiobutton.js",
+  "fesm2015": "../fesm2015/primeng-lts-radiobutton.js",
+  "typings": "primeng-lts-radiobutton.d.ts",
+  "metadata": "primeng-lts-radiobutton.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/radiobutton"
+}

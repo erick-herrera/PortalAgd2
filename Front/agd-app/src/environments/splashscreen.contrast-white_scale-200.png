@@ -1,0 +1,35 @@
+][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 0 milliseconds.
+[ 11948 9860][17 Oct 20:19:59][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 11948 9860][17 Oct 20:19:59][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 11948 9860][17 Oct 20:19:59][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 11948 9860][17 Oct 20:19:59][] COM_Initializer::Dtor: nothing to do
+[ 11948 9860][17 Oct 20:19:59][proxy_API] ~OS_API
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 11948 9860][17 Oct 20:19:59][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 8900 8992][17 Oct 20:19:59][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 8900 8992][17 Oct 20:19:59][cpservice] service_report_status_to_scm: Reporting start pending
+[ 8900 8992][17 Oct 20:19:59][TracService] IsDisabledInEps: failed to read mode from registry
+[ 8900 8992][17 Oct 20:19:59][TracService] 
+
+[ 8900 8992][17 Oct 20:19:59][TracService] -------------------------------------------------------------
+[ 8900 8992][17 Oct 20:19:59][TracService] 					SERVICE WAS STARTED 						
+[ 8900 8992][17 Oct 20:19:59][TracService] -------------------------------------------------------------
+
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666055999, serialNumWithinTheSecond: 0
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8900 8992][17 Oct 20:19:59][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8900 8992][17 Oct 20:19:59][XmlWrapper] XmlDocument::SaveString: inside
+[ 8900 8992][17 Oct 20:19:59][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="Diagnost

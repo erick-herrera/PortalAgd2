@@ -1,0 +1,56 @@
+{
+  "_from": "primeng-lts",
+  "_id": "primeng-lts@10.0.7",
+  "_inBundle": false,
+  "_integrity": "sha512-Zg0006tSI0ntYq1UN96bSI01d7wiKRXE0pHC3mB99/hXKOSftGQPFImGOXwOjfwXbKYqDJTR4NoAzHFqYqMBGQ==",
+  "_location": "/primeng-lts",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "primeng-lts",
+    "name": "primeng-lts",
+    "escapedName": "primeng-lts",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/primeng-lts/-/primeng-lts-10.0.7.tgz",
+  "_shasum": "1fdd8469fb5f006caf92d928fcbe7dde72c931c5",
+  "_spec": "primeng-lts",
+  "_where": "C:\\Users\\erick.herrera\\Desktop\\Softtek\\IMSS\\AGD\\Solicitudes\\Portal\\Front\\agd-app",
+  "bugs": {
+    "url": "https://github.com/primefaces/primeng/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "tslib": "^2.0.0"
+  },
+  "deprecated": false,
+  "description": "## License >  **PrimeNG LTS** is a commercial software. You need to purchase a license and agree to the terms of the [LTS License](https://www.primefaces.org/lts/licenses). Please note that using the software without a proper license constitutes copyright infringement and can result in legal actions.",
+  "es2015": "fesm2015/primeng-lts.js",
+  "esm2015": "esm2015/primeng-lts.js",
+  "fesm2015": "fesm2015/primeng-lts.js",
+  "keywords": [
+    "angular"
+  ],
+  "license": "SEE LICENSE IN LICENSE.md",
+  "main": "bundles/primeng-lts.umd.js",
+  "metadata": "primeng-lts.metadata.json",
+  "module": "fesm2015/primeng-lts.js",
+  "name": "primeng-lts",
+  "peerDependencies": {
+    "@angular/core": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/common": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "@angular/forms": "^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0",
+    "rxjs": "^6.0.0",
+    "zone.js": "^0.10.2"
+  },
+  "sideEffects": false,
+  "typings": "primeng-lts.d.ts",
+  "version": "10.0.7"
+}

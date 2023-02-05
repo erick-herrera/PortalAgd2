@@ -1,0 +1,1635 @@
+@charset "UTF-8";
+:root {
+  --surface-a:#ffffff;
+  --surface-b:#f8f9fa;
+  --surface-c:#e9ecef;
+  --surface-d:#dee2e6;
+  --surface-e:#ffffff;
+  --surface-f:#ffffff;
+  --text-color:#495057;
+  --text-color-secondary:#6c757d;
+  --primary-color:#4CAF50;
+  --primary-color-text:#ffffff;
+  --font-family:-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.p-component {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.p-component-overlay {
+  background-color: rgba(0, 0, 0, 0.4);
+  transition-duration: 0.2s;
+}
+
+.p-disabled, .p-component:disabled {
+  opacity: 0.6;
+}
+
+.p-error, .p-invalid {
+  color: #f44336;
+}
+
+.p-text-secondary {
+  color: #6c757d;
+}
+
+.pi {
+  font-size: 1rem;
+}
+
+.p-link {
+  font-size: 1rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  border-radius: 3px;
+}
+.p-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+}
+
+.p-autocomplete .p-autocomplete-loader {
+  right: 0.5rem;
+}
+.p-autocomplete.p-autocomplete-dd .p-autocomplete-loader {
+  right: 2.857rem;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container {
+  padding: 0.25rem 0.5rem;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container:not(.p-disabled):hover {
+  border-color: #4CAF50;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container:not(.p-disabled).p-focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+  border-color: #4CAF50;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-input-token {
+  padding: 0.25rem 0;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-input-token input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  color: #495057;
+  padding: 0;
+  margin: 0;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-token {
+  padding: 0.25rem 0.5rem;
+  margin-right: 0.5rem;
+  background: #E8F5E9;
+  color: #495057;
+  border-radius: 3px;
+}
+.p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-token .p-autocomplete-token-icon {
+  margin-left: 0.5rem;
+}
+.p-autocomplete.p-error > .p-inputtext, .p-autocomplete.p-invalid > .p-inputtext {
+  border-color: #f44336;
+}
+
+p-autocomplete.ng-dirty.ng-invalid > .p-autocomplete > .p-inputtext {
+  border-color: #f44336;
+}
+
+.p-autocomplete-panel {
+  background: #ffffff;
+  color: #495057;
+  border: 0 none;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.p-autocomplete-panel .p-autocomplete-items {
+  padding: 0.5rem 0;
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  border: 0 none;
+  color: #495057;
+  background: transparent;
+  transition: box-shadow 0.2s;
+  border-radius: 0;
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:hover {
+  color: #495057;
+  background: #e9ecef;
+}
+.p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item.p-highlight {
+  color: #495057;
+  background: #E8F5E9;
+}
+
+.p-calendar.p-error > .p-inputtext, .p-calendar.p-invalid > .p-inputtext {
+  border-color: #f44336;
+}
+
+p-calendar.ng-dirty.ng-invalid > .p-calendar > .p-inputtext {
+  border-color: #f44336;
+}
+
+.p-datepicker {
+  padding: 0.5rem;
+  background: #ffffff;
+  color: #495057;
+  border: 1px solid #ced4da;
+  border-radius: 3px;
+}
+.p-datepicker:not(.p-datepicker-inline) {
+  background: #ffffff;
+  border: 0 none;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.p-datepicker:not(.p-datepicker-inline) .p-datepicker-header {
+  background: #ffffff;
+}
+.p-datepicker .p-datepicker-header {
+  padding: 0.5rem;
+  color: #495057;
+  background: #ffffff;
+  font-weight: 600;
+  margin: 0;
+  border-bottom: 1px solid #dee2e6;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev,
+.p-datepicker .p-datepicker-header .p-datepicker-next {
+  width: 2rem;
+  height: 2rem;
+  color: #6c757d;
+  border: 0 none;
+  background: transparent;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev:enabled:hover,
+.p-datepicker .p-datepicker-header .p-datepicker-next:enabled:hover {
+  color: #495057;
+  border-color: transparent;
+  background: #e9ecef;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-prev:focus,
+.p-datepicker .p-datepicker-header .p-datepicker-next:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-title {
+  line-height: 2rem;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-title select {
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-title select:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+  border-color: #4CAF50;
+}
+.p-datepicker .p-datepicker-header .p-datepicker-title .p-datepicker-month {
+  margin-right: 0.5rem;
+}
+.p-datepicker table {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+.p-datepicker table th {
+  padding: 0.5rem;
+}
+.p-datepicker table th > span {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.p-datepicker table td {
+  padding: 0.5rem;
+}
+.p-datepicker table td > span {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  transition: box-shadow 0.2s;
+  border: 1px solid transparent;
+}
+.p-datepicker table td > span.p-highlight {
+  color: #495057;
+  background: #E8F5E9;
+}
+.p-datepicker table td > span:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+}
+.p-datepicker table td.p-datepicker-today > span {
+  background: #ced4da;
+  color: #495057;
+  border-color: transparent;
+}
+.p-datepicker table td.p-datepicker-today > span.p-highlight {
+  color: #495057;
+  background: #E8F5E9;
+}
+.p-datepicker .p-datepicker-buttonbar {
+  padding: 1rem 0;
+  border-top: 1px solid #dee2e6;
+}
+.p-datepicker .p-datepicker-buttonbar .p-button {
+  width: auto;
+}
+.p-datepicker .p-timepicker {
+  border-top: 1px solid #dee2e6;
+  padding: 0.5rem;
+}
+.p-datepicker .p-timepicker button {
+  width: 2rem;
+  height: 2rem;
+  color: #6c757d;
+  border: 0 none;
+  background: transparent;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+.p-datepicker .p-timepicker button:enabled:hover {
+  color: #495057;
+  border-color: transparent;
+  background: #e9ecef;
+}
+.p-datepicker .p-timepicker button:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.2rem #b7e0b8;
+}
+.p-datepicker .p-timepicker button:last-child {
+  margin-top: 0.2em;
+}
+.p-datepicker .p-timepicker span {
+  font-size: 1.25rem;
+}
+.p-datepicker .p-timepicker > div {
+  padding: 0 0.5rem;
+}
+.p-datepicker.p-datepicker-timeonly .p-timepicker {
+  border-top: 0 none;
+}
+.p-datepicker .p-monthpicker {
+  margin: 0.5rem 0;
+}
+.p-datepicker .p-monthpicker .p-monthpicker-month {
+  padding: 0.5rem;
+  transition: box-shadow 0.2s;
+  border-radius: 3px;
+}
+.p-datepicker .p-monthpicker .p-monthpicker-month.p-highlight {
+  color: #495057;
+  background: #E8F5E9;
+}
+.p-datepicker.p-datepicker-multiple-month .p-datepicker-group {
+  border-right: 1px solid #dee2e6;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.p-datepicker.p-datepicker-multiple-month .p-datepicker-group:first-child {
+  padding-left: 0;
+}
+.p-datepicker.p-datepicker-multiple-month .p-datepicker-group:last-child {
+  padding-right: 0;
+  border-right: 0 none;
+}
+.p-datepicker:not(.p-disabled) taï8(†6ZcyMÕ»å=c\=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡~ñãM‘ã`S¤ƒÔ–=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ùé¾ï•IOd;2_@=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡h<Àê1ã&7Œ´=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Ï,75¢™¾ºıä=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡y%ğæØf×-o£½{Íğ>=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ØƒF2ãR¡|rõcí£	Ê=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Ş·—ai}İ›juÀÂSB«=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡layType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 0
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8052 6944][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 8052 6944][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.251
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.251
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.251
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.251
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 8052 6944][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 8052 6944][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 8052 6944][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.251. Total time - 0 milliseconds
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.251. Total time - 0 milliseconds
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.251. Total time - 0 milliseconds
+[ 8052 6944][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.251. Total time - 0 milliseconds
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8052 6944][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 8052 6944][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 8052 6944][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 8052 6944][17 Oct 19:26:37][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 8052 6944][17 Oct 19:26:37][] COM_Initializer::Dtor: nothing to do
+[ 8052 6944][17 Oct 19:26:37][proxy_API] ~OS_API
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 8052 6944][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 9520 3164][17 Oct 19:26:37][cpservice] service_report_status_to_scm: Reporting start pending
+[ 9520 3164][17 Oct 19:26:37][TracService] IsDisabledInEps: failed to read mode from registry
+[ 9520 3164][17 Oct 19:26:37][TracService] 
+
+[ 9520 3164][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+[ 9520 3164][17 Oct 19:26:37][TracService] 					SERVICE WAS STARTED 						
+[ 9520 3164][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 0
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 9520 3164][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 9520 3164][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.319
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.319
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.319
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.319
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefant_1(s)] __end__ Total: 0 milliseconds.
+[ 12676 6472][17 Oct 15:51:56][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 12676 6472][17 Oct 15:51:56][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 12676 6472][17 Oct 15:51:56][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 12676 6472][17 Oct 15:51:56][] COM_Initializer::Dtor: nothing to do
+[ 12676 6472][17 Oct 15:51:56][proxy_API] ~OS_API
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 12676 6472][17 Oct 15:51:56][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 12040 5912][17 Oct 15:51:56][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 12040 5912][17 Oct 15:51:56][cpservice] service_report_status_to_scm: Reporting start pending
+[ 12040 5912][17 Oct 15:51:56][TracService] IsDisabledInEps: failed to read mode from registry
+[ 12040 5912][17 Oct 15:51:56][TracService] 
+
+[ 12040 5912][17 Oct 15:51:56][TracService] -------------------------------------------------------------
+[ 12040 5912][17 Oct 15:51:56][TracService] 					SERVICE WAS STARTED 						
+[ 12040 5912][17 Oct 15:51:56][TracService] -------------------------------------------------------------
+
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666039916, serialNumWithinTheSecond: 0
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 12040 5912][17 Oct 15:51:56][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 12040 5912][17 Oct 15:51:56][XmlWrapper] XmlDocument::SaveString: inside
+[ 12040 5912][17 Oct 15:51:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666039916"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeultParams()
+[ 9520 3164][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 9520 3164][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 9520 3164][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.319. Total time - 0 milliseconds
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.319. Total time - 0 milliseconds
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.319. Total time - 0 milliseconds
+[ 9520 3164][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.319. Total time - 0 milliseconds
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 9520 3164][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 9520 3164][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 9520 3164][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 9520 3164][17 Oct 19:26:37][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 9520 3164][17 Oct 19:26:37][] COM_Initializer::Dtor: nothing to do
+[ 9520 3164][17 Oct 19:26:37][proxy_API] ~OS_API
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 9520 3164][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 10824 6068][17 Oct 19:26:37][cpservice] service_report_status_to_scm: Reporting start pending
+[ 10824 6068][17 Oct 19:26:37][TracService] IsDisabledInEps: failed to read mode from registry
+[ 10824 6068][17 Oct 19:26:37][TracService] 
+
+[ 10824 6068][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+[ 10824 6068][17 Oct 19:26:37][TracService] 					SERVICE WAS STARTED 						
+[ 10824 6068][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 0
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 1 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 10824 6068][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __endger::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 5020 7832][17 Oct 15:51:49][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 15:51:49.374. Total time - 1 milliseconds
+[ 5020 7832][17 Oct 15:51:49][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 15:51:49.374. Total time - 1 milliseconds
+[ 5020 7832][17 Oct 15:51:49][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 15:51:49.374. Total time - 1 milliseconds
+[ 5020 7832][17 Oct 15:51:49][CONFIG_MANAGER] ConfigurationManager::create: __end__ 15:51:49.374. Total time - 1 milliseconds
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666039909, serialNumWithinTheSecond: 1
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 5020 7832][17 Oct 15:51:49][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 5020 7832][17 Oct 15:51:49][XmlWrapper] XmlDocument::SaveString: inside
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666039909"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 5020 7832][17 Oct 15:51:49][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 5020 7832][17 Oct 15:51:49][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 0 milliseconds.
+[ 5020 7832][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 0 milliseconds.
+[ 5020 7832][17 Oct 15:51:49][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 5020 7832][17 Oct 15:51:49][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 5020 7832][17 Oct 15:51:49][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 5020 7832][17 Oct 15:51:49][] COM_Initializer::Dtor: nothing to do
+[ 5020 7832][17 Oct 15:51:49][proxy_API] ~OS_API
+[ 5020 7832][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 5020 7832][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 5020 7832][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 5020 7832][17 Oct 15:51:49][Multi-site] [INFO] [MultiSiteAutoÆ	4SğUøÕZÉ½‘³ª=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡‡+d¤Ô/û0ã´ĞÒ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡˜?vòªKïè€x=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡hõƒğãME3‘Â¡n=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ÄuYÏßga?<¿€Rl¼I"=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡£&›ÈDVì± ¢h¿=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡O?•z7¥2¥ø1°ë‹á=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡·ç¥Õ7ú´¨è×t·-®=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡6:44.189
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:44.189
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:44.189
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:44.189
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 8608 3732][17 Oct 19:26:44][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 8608 3732][17 Oct 19:26:44][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 8608 3732][17 Oct 19:26:44][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:44.189. Total time - 0 milliseconds
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:44.189. Total time - 0 milliseconds
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:44.189. Total time - 0 milliseconds
+[ 8608 3732][17 Oct 19:26:44][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:44.189. Total time - 0 milliseconds
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052804, serialNumWithinTheSecond: 1
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8608 3732][17 Oct 19:26:44][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8608 3732][17 Oct 19:26:44][XmlWrapper] XmlDocument::SaveString: inside
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052804"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 8608 3732][17 Oct 19:26:44][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 8608 3732][17 Oct 19:26:44][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 8608 3732][17 Oct 19:26:44][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 8608 3732][1nosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""><__ Total: 0 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 10824 6068][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 0 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.380
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.380
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.380
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.380
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 10824 6068][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 10824 6068][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 10824 6068][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.380. Total time - 0 milliseconds
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.381. Total time - 1 milliseconds
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.381. Total time - 1 milliseconds
+[ 10824 6068][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.381. Total time - 1 milliseconds
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 10824 6068][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 10824 6068][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 10824 6068][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Fit: inside
+[ 13688 13680][17 Oct 19:33:09][XmlWrapper] XmlDocument::SaveString: inside
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666053189"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 13688 13680][17 Oct 19:33:09][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:33:9.957
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:33:9.957
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:33:9.957
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:33:9.957
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 13688 13680][17 Oct 19:33:09][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 13688 13680][17 Oct 19:33:09][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 13688 13680][17 Oct 19:33:09][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:33:9.957. Total time - 0 milliseconds
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:33:9.957. Total time - 0 milliseconds
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:33:9.957. Total time - 0 milliseconds
+[ 13688 13680][17 Oct 19:33:09][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:33:9.957. Total time - 0 milliseconds
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666053189, serialNumWithinTheSecond: 1
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 13688 13680][17 Oct 19:33:09][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 13688 13680][17 Oct 19:33:09][XmlWrapper] XmlDocument::SaveString: inside
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666053189"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 13688 13680][17 Oct 19:33:09][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 13688 13680][17 Oct 19:33:09][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 13688 13680][17 Oct 19:33:09][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 13688 13680][17 Oct 19:33:09][] COM_Initializer::Dtor: nothing to do
+[ 13688 13680][17 Oct 19:33:09][proxy_API] ~OS_API
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 13688 13680][17 Oct 19:33:09][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 9124 12532][17 Oct 19:33:10][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 9124 12532][17 Oct 19:33:10][cpservice] service_report_status_to_scm: Reporting start pending
+[ 9124 12532][17 Oct 19:33:10][TracService] IsDisabledInEps: failed to read mode from registry
+[ 9124 12532][17 Oct›Ä ·ÆÊûEì*t‚P=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=˜rÌı×ñêÙGï =tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¯
+*%9·f°Êş9°[Ò=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡O)*ª™kW¢"®š¾3S£=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡şŠ¥ÉÂ§
+wÅL˜ÄéÇ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡#?ø0ö»A–éfÛ<f=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡2G ˆŞŞÃúöøú >h=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡:_TÄL¹öÄ92öòÂ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡nÂe@L1„pÊqÃ]ù®=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Yûj>Çuwr`%”óë}=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Â¬ƒàYuÆ»¸…Ìç·Ÿ‘=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡sd¹İ™¬^„uÔn#Œ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡‚›Ÿ}2 \Fd—ˆ<úk=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡.Xñ¦È[ÌÍz³¨ãÌk=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Ã¿Óxvy\Â¹…Œ0Ù‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡º]Ãñ [¬Œõ/I·òÂ—=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡rapper] XmlDocument::SaveString: inside
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 2928 5752][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.441
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.441
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.441
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.441
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 2928 5752][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 2928 5752][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 2928 5752][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.441. Total time - 0 milliseconds
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.441. Total time - 0 milliseconds
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.441. Total time - 0 milliseconds
+[ 2928 5752][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.441. Total time - 0 milliseconds
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 2928 5752][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 2928 5752][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 2928 5752][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 2928 5752][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 2928 5752][17 Oct 19:26:37][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 2928 5752][17 Oct 19:26:37][] COM_Initializer::Dtor: nothing to do
+[ 2928 5752][17 Oct 19:26:37][proxy_API] ~OS_API
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 2928 5752][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 12532 3852][17 Oct 19:26:37][cpservice] service_report_status_to_scm: Reporting start pending
+[ 12532 3852][17 Oct 19:26:37][TracService] IsDisabledInEps: failed to read mode from registry
+[ 12532 3852][17 Oct 19:26:37][TracService] 
+
+[ 12532 3852][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+[ 12§™úÿP˜1ã7a|)‚=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Îhu±àú&­İ"îÎ'=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡7Y²¢¼uƒ834vª(A=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Æ°ı•B ¥Xoe@¬=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡²í¤ÂêDøöıˆlü=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡±Å£¿{(ÊÁZáü7›=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡|ŸÚ3•-¶J¬g£=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Úùìk„>Œ'¬:º¶RÔÏ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡äèÑz¹«Ï•¦=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡9ú~9í ÿâ
+¼ª¹³.=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡JÏTg=•(ø£7Ÿş.ˆæ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡@³Dç/à¤P]‘ƒ«.c‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡É\j˜Âu‡F}`Â=¥=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡&–PÖ€nÊsº‹5Vÿ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡EQ‰Hh5q_Zíı+¡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡dÁTèæ­ï DÊ¶æ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ıóiı„˜‘nmOwî‹†=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡üu¥‘!ŸfgbÕ´•ºtó=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¬ÙÒ¢J™èç¨¬Ô‹Éî=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡^ÄŞÉXru;‚»‚ÈB=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ïÙŞ^'Z²í•¬?ã—òL=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡fÓ5¬»xş2òwXp[b=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¼¾6µCØÚA6¥ì×°|8=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡éQ7nµ:á§¨Xİ7Š=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡532 3852][17 Oct 19:26:37][TracService] 					SERVICE WAS STARTED 						
+[ 12532 3852][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 0
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 12532 3852][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 12532 3852][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to backup
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.517
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.517
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.517
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.517
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 12532 3852][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 12532 3852][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 12532 3852][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.517. Total time - 0 milliseconds
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.517. Total time - 0 milliseconds
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.517. Total time - 0 milliseconds
+[ 12532 3852][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.517. Total time - 0 milliseconds
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 12532 3852][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 12532 3852][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 12532 3852][17 Oct 19:26:37][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 12532 3852][17 Oct 19:26:37][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 12532 3852][17 Oct 19:26:37][] COM_Initializer::Dtor: nothing to do
+[ 12532 3852][17 Oct 19:26:37][proxy_API] ~OS_API
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 12532 3852][17 Oct 19:26:37][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 13980 6224][17 Oct 19:26:37][cpservice] service_report_status_to_scm: Reporting start pending
+[ 13980 6224][17 Oct 19:26:37][TracService] IsDisabledInEps: failed to read mode from registry
+[ 13980 6224][17 Oct 19:26:37][TracService] 
+
+[ 13980 6224][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+[ 13980 6224][17 Oct 19:26:37][TracService] 					SERVICE WAS STARTED 						
+[ 13980 6224][17 Oct 19:26:37][TracService] -------------------------------------------------------------
+
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 0
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 13980 6224][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 13980 6224][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 2 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 2 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][TracService] Software\CheckPoint\TRAC\5.0 exists - no need to bWÉåâ^’‚r>eUKéßÊí=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Âæûè	Øí¯f4=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ríó·è+MDå„=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ i)a–y—Ùşp&Ã4N—=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡˜Qh˜˜lÍ§ˆ”*qå÷
+ê=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ªD˜æ!!˜«©²ÚVë©=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ò6]Ä×ô‚õïˆ—¡A=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Ø“Ê*®íÌr'«S=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡/Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 19:26:37]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="166zer::Dtor: nothing to do
+[ 5032 1576][17 Oct 15:51:49][proxy_API] ~OS_API
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 5032 1576][17 Oct 15:51:49][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 11212 1980][17 Oct 15:51:49][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 11212 1980][17 Oct 15:51:49][cpservice] service_report_status_to_scm: Reporting start pending
+[ 11212 1980][17 Oct 15:51:49][TracService] IsDisabledInEps: failed to read mode from registry
+[ 11212 1980][17 Oct 15:51:49][TracService] 
+
+[ 11212 1980][17 Oct 15:51:49][TracService] -------------------------------------------------------------
+[ 11212 1980][17 Oct 15:51:49][TracService] 					SERVICE WAS STARTED 						
+[ 11212 1980][17 Oct 15:51:49][TracService] -------------------------------------------------------------
+
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666039909, serialNumWithinTheSecond: 0
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 11212 1980][17 Oct 15:51:49][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 11212 1980][17 Oct 15:51:49][XmlWrapper] XmlDocument::SaveString: inside
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666039909"></Field>
+    <Field name="serialD" value="0"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="0"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Service was started"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 11212 1980][17 Oct 15:51:49][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 11212 1980][17 Oct 15:51:49][TR_CONN_MANAGER] diagnostic_reporackup
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __start__ 19:26:37.599
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 19:26:37.599
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 19:26:37.599
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 19:26:37.599
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 13980 6224][17 Oct 19:26:37][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 13980 6224][17 Oct 19:26:37][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 13980 6224][17 Oct 19:26:37][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 19:26:37.599. Total time - 0 milliseconds
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 19:26:37.599. Total time - 0 milliseconds
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 19:26:37.599. Total time - 0 milliseconds
+[ 13980 6224][17 Oct 19:26:37][CONFIG_MANAGER] ConfigurationManager::create: __end__ 19:26:37.599. Total time - 0 milliseconds
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666052797, serialNumWithinTheSecond: 1
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 13980 6224][17 Oct 19:26:37][XmlWrapper] XmlDocument::SaveString: inside
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666052797"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 13980 6224][17 Oct 19:26:37][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 13980 6224][17 Oct 19:26:37][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 13980 6224][17 Oct 19:26:37][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 13980 6224][17 Oct Vö…O3Ø_”8ˆ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡3Aqf˜ë@6MVı£ÃY“=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡,H‡¸6È6Í1G=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡I.ºº7	åüÎ¾9Ñ,=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡Bõy´­è<!Û‡¦”Õ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡‹™KÖk~”ÖøšÃ‹=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡‹¾¥Øâü&H«jOÃE«Q=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¨ï’·e»äbİÆâA=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¥ª°“i•4‹ÉÊ¿·=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡‘U-–s»€¬ÒF·=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡À
+­û„+;Gan@=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡äşZI[ÉåâñÇŸ{4=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡h‰…ceĞbï*f§yaJ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡ÿÆ¨ŠøÒJü>ÿÄÆ…•İ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQo

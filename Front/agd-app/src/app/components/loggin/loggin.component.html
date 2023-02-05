@@ -1,0 +1,22 @@
+<p-panel header="Firma de Usuario">
+    <div class="p-grid p-fluid">
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-user"></i></span>
+                <input id="txtUsername" type="text" size="30" pInputText [(ngModel)]="usuario" placeholder="Username" />
+            </div>
+        </div>
+        <div class="p-col-12 p-md-4">
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon"><i class="pi pi-key"></i></span>
+                <input id="txtPassword" type="password" size="30" pPassword [(ngModel)]="password"
+                    placeholder="Password" />
+            </div>
+        </div>
+
+        <button pButton type="button" label="Acceder" (click)="loggin()"></button>
+        <p-messages [(value)]="msgs"></p-messages>
+
+    </div>
+
+</p-panel>

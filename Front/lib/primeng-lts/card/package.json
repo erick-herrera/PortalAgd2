@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-card.umd.js",
+  "module": "../fesm2015/primeng-lts-card.js",
+  "es2015": "../fesm2015/primeng-lts-card.js",
+  "esm2015": "../esm2015/card/primeng-lts-card.js",
+  "fesm2015": "../fesm2015/primeng-lts-card.js",
+  "typings": "primeng-lts-card.d.ts",
+  "metadata": "primeng-lts-card.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/card"
+}

@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-orderlist.umd.js",
+  "module": "../fesm2015/primeng-lts-orderlist.js",
+  "es2015": "../fesm2015/primeng-lts-orderlist.js",
+  "esm2015": "../esm2015/orderlist/primeng-lts-orderlist.js",
+  "fesm2015": "../fesm2015/primeng-lts-orderlist.js",
+  "typings": "primeng-lts-orderlist.d.ts",
+  "metadata": "primeng-lts-orderlist.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/orderlist"
+}

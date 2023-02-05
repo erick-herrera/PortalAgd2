@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-togglebutton.umd.js",
+  "module": "../fesm2015/primeng-lts-togglebutton.js",
+  "es2015": "../fesm2015/primeng-lts-togglebutton.js",
+  "esm2015": "../esm2015/togglebutton/primeng-lts-togglebutton.js",
+  "fesm2015": "../fesm2015/primeng-lts-togglebutton.js",
+  "typings": "primeng-lts-togglebutton.d.ts",
+  "metadata": "primeng-lts-togglebutton.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/togglebutton"
+}

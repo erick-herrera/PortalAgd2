@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-menubar.umd.js",
+  "module": "../fesm2015/primeng-lts-menubar.js",
+  "es2015": "../fesm2015/primeng-lts-menubar.js",
+  "esm2015": "../esm2015/menubar/primeng-lts-menubar.js",
+  "fesm2015": "../fesm2015/primeng-lts-menubar.js",
+  "typings": "primeng-lts-menubar.d.ts",
+  "metadata": "primeng-lts-menubar.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/menubar"
+}

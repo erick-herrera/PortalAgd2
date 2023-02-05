@@ -1,0 +1,35 @@
+ JABACABA..., First J');
+assert.equal(
+    1535, longBufferString.indexOf(pattern, 512), 'Long JABACABA..., Second J');
+
+// Search for a non-ASCII string in a pure ASCII string.
+var asciiString = Buffer.from(
+    'arglebargleglopglyfarglebargleglopglyfarglebargleglopglyf');
+assert.equal(-1, asciiString.indexOf('\x2061'));
+assert.equal(3, asciiString.indexOf('leb', 0));
+
+// Search in string containing many non-ASCII chars.
+var allCodePoints = [];
+for (var i = 0; i < 65536; i++) allCodePoints[i] = i;
+var allCharsString = String.fromCharCode.apply(String, allCodePoints);
+var allCharsBufferUtf8 = Buffer.from(allCharsString);
+var allCharsBufferUcs2 = Buffer.from(allCharsString, 'ucs2');
+
+// Search for string long enough to trigger complex search with ASCII pattern
+// and UC16 subject.
+assert.equal(-1, allCharsBufferUtf8.indexOf('notfound'));
+assert.equal(-1, allCharsBufferUcs2.indexOf('notfound'));
+
+// Needle is longer than haystack, but only because it's encoded as UTF-16
+assert.strictEqual(Buffer.from('aaaa').indexOf('a'.repeat(4), 'ucs2'), -1);
+
+assert.strictEqual(Buffer.from('aaaa').indexOf('a'.repeat(4), 'utf8'), 0);
+assert.strictEqual(Buffer.from('aaaa').indexOf('你好', 'ucs2'), -1);
+
+// Haystack has odd length, but the needle is UCS2.
+// assert.strictEqual(Buffer.from('aaaaa').indexOf('b', 'ucs2'), -1);
+
+{
+  // Find substrings in Utf8.
+  var lengths = [1, 3, 15];  // Single char, simple and complex.
+  var indices = [0x5, 0x60, 0x40

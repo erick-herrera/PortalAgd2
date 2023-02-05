@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-rating.umd.js",
+  "module": "../fesm2015/primeng-lts-rating.js",
+  "es2015": "../fesm2015/primeng-lts-rating.js",
+  "esm2015": "../esm2015/rating/primeng-lts-rating.js",
+  "fesm2015": "../fesm2015/primeng-lts-rating.js",
+  "typings": "primeng-lts-rating.d.ts",
+  "metadata": "primeng-lts-rating.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/rating"
+}

@@ -1,0 +1,81 @@
+{"__symbolic":"module","version":4,"metadata":{"AccordionTab":{"__symbolic":"class","decorators":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/core","name":"Component","line":10,"character":1},"arguments":[{"selector":"p-accordionTab","template":"\n        <div class=\"p-accordion-tab\" [ngClass]=\"{'p-accordion-tab-active': selected}\">\n            <div class=\"p-accordion-header\" [ngClass]=\"{'p-highlight': selected, 'p-disabled': disabled}\">\n                <a role=\"tab\" class=\"p-accordion-header-link\" (click)=\"toggle($event)\" (keydown)=\"onKeydown($event)\" [attr.tabindex]=\"disabled ? null : 0\"\n                    [attr.id]=\"id\" [attr.aria-controls]=\"id + '-content'\" [attr.aria-expanded]=\"selected\">\n                    <span class=\"p-accordion-toggle-icon\" [ngClass]=\"selected ? accordion.collapseIcon : accordion.expandIcon\"></span>\n                    <span class=\"p-accordion-header-text\" *ngIf=\"!hasHeaderFacet\">\n                        {{header}}\n                    </span>\n                    <ng-container *ngTemplateOutlet=\"headerTemplate\"></ng-container>\n                    <ng-content select=\"p-header\" *ngIf=\"hasHeaderFacet\"></ng-content>\n                </a>\n            </div>\n            <div [attr.id]=\"id + '-content'\" class=\"p-toggleable-content\" [@tabContent]=\"selected ? {value: 'visible', params: {transitionParams: transitionOptions}} : {value: 'hidden', params: {transitionParams: transitionOptions}}\"\n                role=\"region\" [attr.aria-hidden]=\"!selected\" [attr.aria-labelledby]=\"id\">\n                <div class=\"p-accordion-content\">\n                    <ng-content></ng-content>\n                    <ng-container *ngIf=\"contentTemplate && (cache ? loaded : selected)\">\n                        <ng-container *ngTemplateOutlet=\"contentTemplate\"></ng-container>\n                    </ng-container>\n                </div>\n            </div>\n        </div>\n    ","animations":[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"trigger","line":37,"character":8},"arguments":["tabContent",[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"state","line":38,"character":12},"arguments":["hidden",{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"style","line":38,"character":28},"arguments":[{"height":"0","overflow":"hidden"}]}]},{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"state","line":42,"character":12},"arguments":["visible",{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"style","line":42,"character":29},"arguments":[{"height":"*"}]}]},{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"transition","line":45,"character":12},"arguments":["visible <=> hidden",[{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"style","line":45,"character":46},"arguments":[{"overflow":"hidden"}]},{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"animate","line":45,"character":75},"arguments":["{{transitionParams}}"]}]]},{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"transition","line":46,"character":12},"arguments":["void => *",{"__symbolic":"call","expression":{"__symbolic":"reference","module":"@angular/animations","name":"animate","line":46,"character":36},"arguments":[0]}]}]]}],"changeDetection":{"__symbolic":"select","expression":{"__symbolic":"reference","module":"@angular/core","name":"ChangeDetectionStrategy","line":49,"character":21},"member":"OnPush"},"encapsulation":{"__symbolic":"select","expression":{"__symbolic":"reference","module":"@angular/core","name":"ViewEncapsulation","line":50,"character":19},"member":"None"},"styles":[".p-accordion-header-link{-moz-user-select:none;-ms-fle276][17 Oct 18:32:56][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 18:32:56.837. Total time - 1 milliseconds
+[ 9812 7276][17 Oct 18:32:56][CONFIG_MANAGER] ConfigurationManager::create: __end__ 18:32:56.837. Total time - 1 milliseconds
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666049576, serialNumWithinTheSecond: 1
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 9812 7276][17 Oct 18:32:56][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 9812 7276][17 Oct 18:32:56][XmlWrapper] XmlDocument::SaveString: inside
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666049576"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 9812 7276][17 Oct 18:32:56][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 9812 7276][17 Oct 18:32:56][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 9812 7276][17 Oct 18:32:56][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 9812 7276][17 Oct 18:32:56][] COM_Initializer::Dtor: nothing to do
+[ 9812 7276][17 Oct 18:32:56][proxy_API] ~OS_API
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 9812 7276][17 Oct 18:32:56][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 8128 6980][17 Oct 18:32:56][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 8128 6980][17 Oct 18:32:56][cpservice] service_report_status_to_scm: Reporting start pending
+[ 8128 6980][17 Oct 18:32:56][TracService] IsDisabledInEps: failed to read mode from registry
+[ 8128 6980][17 Oct 18:32:56][TracService] 
+
+[ 8128 6980][17 Oct 18:32:56][TracService] -------------------------------------------------------------
+[ 8128 6980][17 Oct 18:32:56][TracService] 					SERVICE WAS STARTED 						
+[ 8128 6980][17 Oct 18:32:56][TracService] -------------------------------------------------------------
+
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666049576, serialNumWithinTheSecond: 0
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8128 6980][17 Oct 18:32:56][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8128 6980][17 Oct 18:32:56][XmlWrapper] XmlDocument::SaveString: inside
+[ 8128 6980][17 Oct 18:32:56][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_Rec

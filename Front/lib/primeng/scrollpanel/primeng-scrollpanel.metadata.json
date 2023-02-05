@@ -1,0 +1,93 @@
+STIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event after removing 0d0a: 
+
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666048432"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[ 8476 3824][17 Oct 18:13:52][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 8476 3824][17 Oct 18:13:52][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 8476 3824][17 Oct 18:13:52][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 8476 3824][17 Oct 18:13:52][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][TR_OVERSITE] TR_OVERSITE::Create: EXCEPTION!
+[ 8476 3824][17 Oct 18:13:52][TR_OVERSITE] TR_OVERSITE::Create: error reading file in ConfigurationManager::loadDefaultParams()
+[ 8476 3824][17 Oct 18:13:52][TracService] ServiceMain: mainloop exited without stopping the service, calling exit
+[ 8476 3824][17 Oct 18:13:52][] COM_Initializer::Dtor: nothing to do
+[ 8476 3824][17 Oct 18:13:52][proxy_API] ~OS_API
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 0 milliseconds.
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 8476 3824][17 Oct 18:13:52][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 8116 13428][17 Oct 18:13:52][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 8116 13428][17 Oct 18:13:52][cpservice] service_report_status_to_scm: Reporting start pending
+[ 8116 13428][17 Oct 18:13:52][TracService] IsDisabledInEps: failed to read mode from registry
+[ 8116 13428][17 Oct 18:13:52][TracService] 
+
+[ 8116 13428][17 Oct 18:13:52][TracService] -------------------------------------------------------------
+[ 8116 13428][17 Oct 18:13:52][TracService] 					SERVICE WAS STARTED 						
+[ 8116 13428][17 Oct 18:13:52][TracService] -------------------------------------------------------------
+
+[ 8116 13428][17 Oct 18:13:52][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8116 13428][17 Oct 18:13:52][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::re
+[17 Oct 14:40:52]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666035652"></Field>
+    <Field name="serialD" value="1"></Field>
+  </OBJECT>
+
+  <Field name="dataTypeD" value="1"></Field>
+
+  <Field name="dataDisplayTypeD" value="4"></Field>
+
+  <Field name="userNameD" value=""></Field>
+
+  <Field name="siteNameD" value=""></Field>
+
+  <Field name="gwNameD" value=""></Field>
+
+  <Field name="gwIPD" value=""></Field>
+
+  <Field name="severityLevelD" value="1"></Field>
+
+  <Field name="dataD" value="Error in client initialization"></Field>
+
+  <Field name="helpdeskRecordTypeD" value="-1"></Field>
+
+</OBJECT>
+
+[17 Oct 14:40:52]
+<OBJECT name="helpdesk event" type="DiagnosticHelpdeskEventData">
+
+  <OBJECT name="idD" type="Diagnostic_RecordId">
+    <Field name="timeStampD" value="1666035

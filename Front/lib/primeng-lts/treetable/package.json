@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-treetable.umd.js",
+  "module": "../fesm2015/primeng-lts-treetable.js",
+  "es2015": "../fesm2015/primeng-lts-treetable.js",
+  "esm2015": "../esm2015/treetable/primeng-lts-treetable.js",
+  "fesm2015": "../fesm2015/primeng-lts-treetable.js",
+  "typings": "primeng-lts-treetable.d.ts",
+  "metadata": "primeng-lts-treetable.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/treetable"
+}

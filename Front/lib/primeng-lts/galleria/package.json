@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-galleria.umd.js",
+  "module": "../fesm2015/primeng-lts-galleria.js",
+  "es2015": "../fesm2015/primeng-lts-galleria.js",
+  "esm2015": "../esm2015/galleria/primeng-lts-galleria.js",
+  "fesm2015": "../fesm2015/primeng-lts-galleria.js",
+  "typings": "primeng-lts-galleria.d.ts",
+  "metadata": "primeng-lts-galleria.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/galleria"
+}

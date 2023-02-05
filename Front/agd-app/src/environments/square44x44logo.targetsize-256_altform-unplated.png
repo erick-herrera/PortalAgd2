@@ -1,0 +1,22 @@
+ager::reset] __end__ Total: 0 milliseconds.
+[ 13236 5856][17 Oct 20:01:51][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __end__ Total: 1 milliseconds.
+[ 13236 5856][17 Oct 20:01:51][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __start__
+[ 13236 5856][17 Oct 20:01:51][Multi-site] [COVERAGE] [MultiSiteEncDomainMapper::~MultiSiteEncDomainMapper] __end__ Total: 0 milliseconds.
+[ 8672 8484][17 Oct 20:01:51][TracService] ServiceMain: Entered service's main entry point (Check Point Endpoint Security)
+[ 8672 8484][17 Oct 20:01:51][cpservice] service_report_status_to_scm: Reporting start pending
+[ 8672 8484][17 Oct 20:01:51][TracService] IsDisabledInEps: failed to read mode from registry
+[ 8672 8484][17 Oct 20:01:51][TracService] 
+
+[ 8672 8484][17 Oct 20:01:51][TracService] -------------------------------------------------------------
+[ 8672 8484][17 Oct 20:01:51][TracService] 					SERVICE WAS STARTED 						
+[ 8672 8484][17 Oct 20:01:51][TracService] -------------------------------------------------------------
+
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 0 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Service was started
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666054911, serialNumWithinTheSecond: 0
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 8672 8484][17 Oct 20:01:51][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 8672 8484][17 Oct 20:01:51][XmlWrapper] XmlDocument::SaveString: inside
+[ 8672 8484][17 Oct 20:01:51][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::_report_event(s)] new event 

@@ -1,0 +1,32 @@
+'use strict';
+var Buffer = require('../../').Buffer;
+
+
+var assert = require('assert');
+
+var Buffer = require('../../').Buffer;
+
+var b = Buffer.from('abcdef');
+var buf_a = Buffer.from('a');
+var buf_bc = Buffer.from('bc');
+var buf_f = Buffer.from('f');
+var buf_z = Buffer.from('z');
+var buf_empty = Buffer.from('');
+
+assert.equal(b.indexOf('a'), 0);
+assert.equal(b.indexOf('a', 1), -1);
+assert.equal(b.indexOf('a', -1), -1);
+assert.equal(b.indexOf('a', -4), -1);
+assert.equal(b.indexOf('a', -b.length), 0);
+assert.equal(b.indexOf('a', NaN), 0);
+assert.equal(b.indexOf('a', -Infinity), 0);
+assert.equal(b.indexOf('a', Infinity), -1);
+assert.equal(b.indexOf('bc'), 1);
+assert.equal(b.indexOf('bc', 2), -1);
+assert.equal(b.indexOf('bc', -1), -1);
+assert.equal(b.indexOf('bc', -3), -1);
+assert.equal(b.indexOf('bc', -5), 1);
+assert.equal(b.indexOf('bc', NaN), 1);
+assert.equal(b.indexOf('bc', -Infinity), 1);
+assert.equal(b.indexOf('bc', Infinity), -1);
+assert.

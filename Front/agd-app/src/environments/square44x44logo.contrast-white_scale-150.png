@@ -1,0 +1,6 @@
+gHandler::writeEventToLog(s)] __end__ Total: 0 milliseconds.
+[ 8072 3720][17 Oct 20:02:09][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 8072 3720][17 Oct 20:02:09][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 8072 3720][17 Oct 20:02:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 8072 3720][17 Oct 20:02:09][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __end__ Total: 1 milliseconds.
+[ 8072 3720][

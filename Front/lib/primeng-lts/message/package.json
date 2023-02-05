@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-message.umd.js",
+  "module": "../fesm2015/primeng-lts-message.js",
+  "es2015": "../fesm2015/primeng-lts-message.js",
+  "esm2015": "../esm2015/message/primeng-lts-message.js",
+  "fesm2015": "../fesm2015/primeng-lts-message.js",
+  "typings": "primeng-lts-message.d.ts",
+  "metadata": "primeng-lts-message.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/message"
+}

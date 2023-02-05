@@ -1,0 +1,10 @@
+npm install --save express
+npm install --save cors
+npm install --save mariadb
+npm install --save helmet
+npm install --save jsonwebtoken
+npm install --save dotenv
+
+
+revisar:
+https://asfo.medium.com/autenticando-un-api-rest-con-nodejs-y-jwt-json-web-tokens-5f3674aba50e

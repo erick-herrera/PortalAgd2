@@ -1,0 +1,57 @@
+
+
+
+<p-table #dt [value]="servidores" 
+    selectionMode="single" [(selection)]="servidorSeleccionado" 
+        dataKey="cveInventario"
+        [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10,25,50]" [loading]="loading" styleClass="p-datatable-customers"
+        [paginator]="true" currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} servidores"
+        [filterDelay]="0" [globalFilterFields]="['idColaborador']">
+        <ng-template pTemplate="caption">
+            <div class="table-header">
+                <button pButton type="button" icon="pi pi-replay" (click)="actualizaInventario()" ></button>
+                Inventario de Servidores
+                
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input pInputText type="text" (input)="dt.filterGlobal($event.target.value, 'contains')" placeholder="Global Search" />
+                </span>
+            </div>
+        </ng-template>
+        <ng-template pTemplate="header">
+            <tr>
+            <!--    <th>Id</th> -->
+                <th>Colaborador</th>
+                <th>Aplicativo</th>
+            <!--    <th>Nombre del Servidor</th> -->
+                <th>DBMS</th>
+            <!--    <th>VersiÃ³n DBMS</th> -->
+                <th>Ambiente</th>
+                <th>IP</th>
+            <!--    <th>PUERTO(S)</th> -->
+            <!--    <th>SID</th> -->
+            <!--    <th>ESQUEMA(S)</th> -->
+                <th>USUARIO(BD)</th>
+                <th>CONTRASEÃ‘A(BD)</th>
+            <!--    <th>TIPO USUARIO</th> -->
+            <!--    <th>SISTEMA OPERATIVO</th> -->
+                <th>USUARIO(SO)</th>
+                <th>CONTRASEÃ‘A(SO)</th>
+            <!--    <th>OBSERVACIONES</th> -->
+            <!--    <th>SE RESPALDA</th> -->
+            </tr>
+            <tr>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'cveInventario', 'startsWith')" placeholder="Buscar por clave" class="p-column-filter"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'idColaborador', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'desAplicativo', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'nomServidor', 'contains')" placeholder="Buscar" class="p-column-filter"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'nomDbms', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'verDbms', 'contains')" placeholder="Buscar" class="p-column-filter"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'ambiente', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'ip', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'puerto', 'contains')" placeholder="Buscar" class="p-column-filter"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'sid', 'contains')" placeholder="Buscar" class="p-column-filter"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'esquema', 'contains')" placeholder="Buscar" class="p-column-filter"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'bdUsuario', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'bdPassword', 'contains')" placeholder="Buscar" class="p-column-filter"></th>
+          GÅ!Æ‡s<ÄCúÿ.¶N=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡0>ÜBßðÌ:À<ÖðáØ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡cDÆ®f§¼.˜Å÷¿=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡JK1¹?ÅÖ—ÁÌëâ=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡¶Wxhº/ºÐ¤Kótz¡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=tQoçÖ¥;\ÿ“é!‡=t

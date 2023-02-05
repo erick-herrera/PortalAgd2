@@ -1,0 +1,20 @@
+CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __start__ 20:19:59.918
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::init(): __start__ 20:19:59.918
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::load(): __start__ 20:19:59.918
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams()
+[ 11948 9860][17 Oct 20:19:59][FileManager] FileManager::openFile: file "trac.defaults" does not exist
+[ 11948 9860][17 Oct 20:19:59][FileManager] FileManager::readFile: error occured while opening the file "trac.defaults"
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::loadDefaultParams() error reading trac.defaults file in ConfigurationManager::loadDefaultParams()
+[ 11948 9860][17 Oct 20:19:59][RaisException] RaisException::BaseException::BaseException: error code = 11, error message = error reading file in ConfigurationManager::loadDefaultParams(), file name =ConfigurationManager.cpp, line number = 1369
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::load(): __end__ 20:19:59.919. Total time - 1 milliseconds
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::init(): __end__ 20:19:59.919. Total time - 1 milliseconds
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::ConfigurationManager: __end__ 20:19:59.919. Total time - 1 milliseconds
+[ 11948 9860][17 Oct 20:19:59][CONFIG_MANAGER] ConfigurationManager::create: __end__ 20:19:59.919. Total time - 1 milliseconds
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpdesk_event_1(s)] __start__
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [DEBUG] [Diagnostic_EventReporter::report_helpdesk_event_1(s)]  eventDisplayType: 4 severityLevel: 1 userName:  siteName:  gwName:  gwIP:  eventText: Error in client initialization
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __start__
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [INFO] [Diagnostic_Id_Generator::generateId(s)] new id is: timeStamp: 1666055999, serialNumWithinTheSecond: 1
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_Id_Generator::generateId(s)] __end__ Total: 0 milliseconds.
+[ 11948 9860][17 Oct 20:19:59][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __start__
+[ 11948 9860][17 Oct 20:19:59][XmlWrapper] XmlDocument::XmlDocument: inside
+[ 11948 9860][17 Oct 

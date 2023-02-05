@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-autocomplete.umd.js",
+  "module": "../fesm2015/primeng-lts-autocomplete.js",
+  "es2015": "../fesm2015/primeng-lts-autocomplete.js",
+  "esm2015": "../esm2015/autocomplete/primeng-lts-autocomplete.js",
+  "fesm2015": "../fesm2015/primeng-lts-autocomplete.js",
+  "typings": "primeng-lts-autocomplete.d.ts",
+  "metadata": "primeng-lts-autocomplete.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/autocomplete"
+}

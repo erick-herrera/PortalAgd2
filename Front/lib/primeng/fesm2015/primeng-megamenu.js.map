@@ -1,0 +1,131 @@
+nnected
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 0 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 1 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 2 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 3 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 4 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 5 On
+2022/10/17 17:00:37.275|00002388|Information|ServiceUtils::CheckWlanStatus|Phy state : 1
+2022/10/17 17:00:37.275|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Current WLAN status = 1
+2022/10/17 17:00:37.277|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() returns ERROR_BUFFER_OVERFLOW: Re-allocating with new buffer size = 4928
+2022/10/17 17:00:37.280|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() success: ulOutBufLen = 4928.
+2022/10/17 17:00:37.280|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Adapter name : {54532B07-91AD-4A49-9ECD-A410A1E9365D}, Adapter desc : Intel(R) Ethernet Connection (6) I219-V, Index : 8, IP Address : 192.168.50.105
+2022/10/17 17:00:37.280|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|An Ethernet network interface.
+2022/10/17 17:00:37.280|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet adapter is present in the Hardware list
+2022/10/17 17:00:37.280|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet is not VPN and IP is valid
+2022/10/17 17:00:37.280|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet connection status = 1
+2022/10/17 17:00:37.280|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet is connected
+2022/10/17 17:00:37.280|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|LAN-WLAN Auto Switching Status = 0
+2022/10/17 17:00:37.280|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|wlan_notification_acm_network_available[LanWlanSwitchingEnabled disabled].Setting WlanPowerStatus 1 in registry.
+2022/10/17 17:00:37.280|00002388|Information|ServiceUtils::SetWlanPowerStatusInRegistry|SetWlanPowerStatusInRegistry. Value = True
+2022/10/17 17:00:37.280|00002388|Information|ServiceUtils::SetPowerStatusInRegistry|Writing Power Status in registry. Value = True
+2022/10/17 17:01:38.065|00002388|Information|CMainService::WlanNotificationCallback|NotificationSource = WLAN_NOTIFICATION_SOURCE_ACM, NotificationCode = wlan_notification_acm_network_available. Processing Callback 
+2022/10/17 17:01:38.067|00002388|Information|ServiceUtils::CheckWlanStatus|WLAN Interface Count : 1
+2022/10/17 17:01:38.067|00002388|Information|ServiceUtils::CheckWlanStatus|Current Index: 0
+2022/10/17 17:01:38.067|00002388|Information|ServiceUtils::CheckWlanStatus|Interface Description: Intel(R) Wi-Fi 6 AX200 160MHz
+2022/10/17 17:01:38.067|00002388|Information|ServiceUtils::CheckWlanStatus|Interface State :  
+2022/10/17 17:01:38.067|00002388|Information|ServiceUtils::CheckWlanStatus|Not connected
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 0 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 1 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 2 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 3 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 4 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 5 On
+2022/10/17 17:01:38.068|00002388|Information|ServiceUtils::CheckWlanStatus|Phy state : 1
+2022/10/17 17:01:38.069|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Current WLAN status = 1
+2022/10/17 17:01:38.071|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() returns ERROR_BUFFER_OVERFLOW: Re-allocating with new buffer size = 4928
+2022/10/17 17:01:38.073|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() success: ulOutBufLen = 4928.
+2022/10/17 17:01:38.073|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Adapter name : {54532B07-91AD-4A49-9ECD-A410A1E9365D}, Adapter desc : Intel(R) Ethernet Connection (6) I219-V, Index : 8, IP Address : 192.168.50.105
+2022/10/17 17:01:38.073|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|An Ethernet network interface.
+2022/10/17 17:01:38.073|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet adapter is present in the Hardware list
+2022/10/17 17:01:38.073|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet is not VPN and IP is valid
+2022/10/17 17:01:38.073|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet connection status = 1
+2022/10/17 17:01:38.073|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet is connected
+2022/10/17 17:01:38.073|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|LAN-WLAN Auto Switching Status = 0
+2022/10/17 17:01:38.073|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|wlan_notification_acm_network_available[LanWlanSwitchingEnabled disabled].Setting WlanPowerStatus 1 in registry.
+2022/10/17 17:01:38.073|00002388|Information|ServiceUtils::SetWlanPowerStatusInRegistry|SetWlanPowerStatusInRegistry. Value = True
+2022/10/17 17:01:38.073|00002388|Information|ServiceUtils::SetPowerStatusInRegistry|Writing Power Status in registry. Value = True
+2022/10/17 17:02:38.811|00002388|Information|CMainService::WlanNotificationCallback|NotificationSource = WLAN_NOTIFICATION_SOURCE_ACM, NotificationCode = wlan_notification_acm_network_available. Processing Callback 
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|WLAN Interface Count : 1
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Current Index: 0
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Interface Description: Intel(R) Wi-Fi 6 AX200 160MHz
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Interface State :  
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Not connected
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 0 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 1 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 2 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 3 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 4 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 5 On
+2022/10/17 17:02:38.811|00002388|Information|ServiceUtils::CheckWlanStatus|Phy state : 1
+2022/10/17 17:02:38.811|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Current WLAN status = 1
+2022/10/17 17:02:38.813|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() returns ERROR_BUFFER_OVERFLOW: Re-allocating with new buffer size = 4928
+2022/10/17 17:02:38.815|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() success: ulOutBufLen = 4928.
+2022/10/17 17:02:38.815|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Adapter name : {54532B07-91AD-4A49-9ECD-A410A1E9365D}, Adapter desc : Intel(R) Ethernet Connection (6) I219-V, Index : 8, IP Address : 192.168.50.105
+2022/10/17 17:02:38.815|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|An Ethernet network interface.
+2022/10/17 17:02:38.815|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet adapter is present in the Hardware list
+2022/10/17 17:02:38.815|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet is not VPN and IP is valid
+2022/10/17 17:02:38.815|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet connection status = 1
+2022/10/17 17:02:38.815|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet is connected
+2022/10/17 17:02:38.815|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|LAN-WLAN Auto Switching Status = 0
+2022/10/17 17:02:38.815|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|wlan_notification_acm_network_available[LanWlanSwitchingEnabled disabled].Setting WlanPowerStatus 1 in registry.
+2022/10/17 17:02:38.815|00002388|Information|ServiceUtils::SetWlanPowerStatusInRegistry|SetWlanPowerStatusInRegistry. Value = True
+2022/10/17 17:02:38.815|00002388|Information|ServiceUtils::SetPowerStatusInRegistry|Writing Power Status in registry. Value = True
+2022/10/17 17:03:36.932|00002388|Information|CMainService::WlanNotificationCallback|NotificationSource = WLAN_NOTIFICATION_SOURCE_ACM, NotificationCode = wlan_notification_acm_network_available. Processing Callback 
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|WLAN Interface Count : 1
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Current Index: 0
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Interface Description: Intel(R) Wi-Fi 6 AX200 160MHz
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Interface State :  
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Not connected
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 0 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 1 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 2 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 3 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 4 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 5 On
+2022/10/17 17:03:36.934|00002388|Information|ServiceUtils::CheckWlanStatus|Phy state : 1
+2022/10/17 17:03:36.934|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Current WLAN status = 1
+2022/10/17 17:03:36.936|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() returns ERROR_BUFFER_OVERFLOW: Re-allocating with new buffer size = 4928
+2022/10/17 17:03:36.938|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() success: ulOutBufLen = 4928.
+2022/10/17 17:03:36.938|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Adapter name : {54532B07-91AD-4A49-9ECD-A410A1E9365D}, Adapter desc : Intel(R) Ethernet Connection (6) I219-V, Index : 8, IP Address : 192.168.50.105
+2022/10/17 17:03:36.938|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|An Ethernet network interface.
+2022/10/17 17:03:36.938|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet adapter is present in the Hardware list
+2022/10/17 17:03:36.938|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet is not VPN and IP is valid
+2022/10/17 17:03:36.938|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet connection status = 1
+2022/10/17 17:03:36.938|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet is connected
+2022/10/17 17:03:36.938|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|LAN-WLAN Auto Switching Status = 0
+2022/10/17 17:03:36.938|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|wlan_notification_acm_network_available[LanWlanSwitchingEnabled disabled].Setting WlanPowerStatus 1 in registry.
+2022/10/17 17:03:36.938|00002388|Information|ServiceUtils::SetWlanPowerStatusInRegistry|SetWlanPowerStatusInRegistry. Value = True
+2022/10/17 17:03:36.938|00002388|Information|ServiceUtils::SetPowerStatusInRegistry|Writing Power Status in registry. Value = True
+2022/10/17 17:04:37.156|00002388|Information|CMainService::WlanNotificationCallback|NotificationSource = WLAN_NOTIFICATION_SOURCE_ACM, NotificationCode = wlan_notification_acm_network_available. Processing Callback 
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|WLAN Interface Count : 1
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Current Index: 0
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Interface Description: Intel(R) Wi-Fi 6 AX200 160MHz
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Interface State :  
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Not connected
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 0 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 1 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 2 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 3 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 4 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy: 5 On
+2022/10/17 17:04:37.158|00002388|Information|ServiceUtils::CheckWlanStatus|Phy state : 1
+2022/10/17 17:04:37.158|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Current WLAN status = 1
+2022/10/17 17:04:37.162|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() returns ERROR_BUFFER_OVERFLOW: Re-allocating with new buffer size = 4928
+2022/10/17 17:04:37.164|00002388|Information|NLMEventHandler::InitialiseAdapter|GetAdaptersInfo() success: ulOutBufLen = 4928.
+2022/10/17 17:04:37.164|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Adapter name : {54532B07-91AD-4A49-9ECD-A410A1E9365D}, Adapter desc : Intel(R) Ethernet Connection (6) I219-V, Index : 8, IP Address : 192.168.50.105
+2022/10/17 17:04:37.164|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|An Ethernet network interface.
+2022/10/17 17:04:37.164|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet adapter is present in the Hardware list
+2022/10/17 17:04:37.164|00002388|Information|NLMEventHandler::CheckEthernetConnectionStatus|Ethernet is not VPN and IP is valid
+2022/10/17 17:04:37.164|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet connection status = 1
+2022/10/17 17:04:37.164|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|Ethernet is connected
+2022/10/17 17:04:37.164|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|LAN-WLAN Auto Switching Status = 0
+2022/10/17 17:04:37.164|00002388|Information|CMainService::HandleWlanNotificationAcmNetworkAvailable|wlan_notification_acm_network_available[LanWlanSwitchingEnabled disabled].Setting WlanPowerStatus 1 in registry.
+2022/10/17 17:04:37.164|00002388|Information|ServiceUtils::SetWlanPowerStatusInRegistry|SetWlanPowerStatusInRegistry. Value = True
+2022/10/17 17:04:37.164|00002388|Information|ServiceUtils::SetPowerStatusInRegistry|Writing Power Status in registry. Value = True
+2022/10/17 17:05:36.702|00002388|Information|CMainService::WlanNotificationCallback|NotificationSource = WLAN_NOTIFICATION_SOURCE_ACM, NotificationCode = wlan_notification_acm_network_available. Processing Callback 
+2022/10/17 17:05:36.704|00002388|Information|ServiceUtils::CheckWlanStatus|WLAN Interface Count : 1
+2022/10/17 17:05:36.704|00002388|Information|ServiceUtils::CheckWlanStatus|Current Index: 0
+2022/10/17 17:05:36.704|00002388|Information|ServiceUtils::CheckWlanStatus|Interface Description: Intel(R) Wi-Fi 6 AX200 160MHz
+2022/10/17 17:05:36.704|00002388|Information|ServiceUtils::CheckWlanStatus|Interface State :  
+2022/10/17 17:05:36.704|00002388|Information|Serv

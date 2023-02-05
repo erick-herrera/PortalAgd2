@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-scrollpanel.umd.js",
+  "module": "../fesm2015/primeng-lts-scrollpanel.js",
+  "es2015": "../fesm2015/primeng-lts-scrollpanel.js",
+  "esm2015": "../esm2015/scrollpanel/primeng-lts-scrollpanel.js",
+  "fesm2015": "../fesm2015/primeng-lts-scrollpanel.js",
+  "typings": "primeng-lts-scrollpanel.d.ts",
+  "metadata": "primeng-lts-scrollpanel.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/scrollpanel"
+}

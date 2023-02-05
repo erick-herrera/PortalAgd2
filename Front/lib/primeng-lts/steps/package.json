@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-steps.umd.js",
+  "module": "../fesm2015/primeng-lts-steps.js",
+  "es2015": "../fesm2015/primeng-lts-steps.js",
+  "esm2015": "../esm2015/steps/primeng-lts-steps.js",
+  "fesm2015": "../fesm2015/primeng-lts-steps.js",
+  "typings": "primeng-lts-steps.d.ts",
+  "metadata": "primeng-lts-steps.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/steps"
+}

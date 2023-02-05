@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-inputmask.umd.js",
+  "module": "../fesm2015/primeng-lts-inputmask.js",
+  "es2015": "../fesm2015/primeng-lts-inputmask.js",
+  "esm2015": "../esm2015/inputmask/primeng-lts-inputmask.js",
+  "fesm2015": "../fesm2015/primeng-lts-inputmask.js",
+  "typings": "primeng-lts-inputmask.d.ts",
+  "metadata": "primeng-lts-inputmask.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/inputmask"
+}

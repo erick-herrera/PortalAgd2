@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-inputnumber.umd.js",
+  "module": "../fesm2015/primeng-lts-inputnumber.js",
+  "es2015": "../fesm2015/primeng-lts-inputnumber.js",
+  "esm2015": "../esm2015/inputnumber/primeng-lts-inputnumber.js",
+  "fesm2015": "../fesm2015/primeng-lts-inputnumber.js",
+  "typings": "primeng-lts-inputnumber.d.ts",
+  "metadata": "primeng-lts-inputnumber.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/inputnumber"
+}

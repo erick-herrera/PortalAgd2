@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-checkbox.umd.js",
+  "module": "../fesm2015/primeng-lts-checkbox.js",
+  "es2015": "../fesm2015/primeng-lts-checkbox.js",
+  "esm2015": "../esm2015/checkbox/primeng-lts-checkbox.js",
+  "fesm2015": "../fesm2015/primeng-lts-checkbox.js",
+  "typings": "primeng-lts-checkbox.d.ts",
+  "metadata": "primeng-lts-checkbox.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/checkbox"
+}

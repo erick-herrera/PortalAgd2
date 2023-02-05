@@ -1,0 +1,99 @@
+<app-menu></app-menu>
+
+<p-panel header="Consulta de Servidores">
+    <ng-template pTemplate="header">
+        <button pButton type="button" label="Limpiar Filtros" class="p-button-raised p-button-rounded" icon="pi pi-times" (click)="limpiarFiltros()"></button>
+    </ng-template>
+    <p-table #dt [value]="servidores" selectionMode="single" [(selection)]="servidorSeleccionado"
+        (onRowSelect)="onRowSelect($event)" dataKey="cveInventario" [rows]="10" [showCurrentPageReport]="true"
+        [rowsPerPageOptions]="[10,25,50]" [loading]="loading" styleClass="p-datatable-customers" [paginator]="true"
+        currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} servidores" [filterDelay]="0"
+        [globalFilterFields]="['idColaborador']">
+        
+        <ng-template pTemplate="header">
+            <tr>
+                <!--    <th>Id</th> -->
+                <th>Colaborador</th>
+                <th>Aplicativo</th>
+                <!--    <th>Nombre del Servidor</th> -->
+                <th>DBMS</th>
+                <!--    <th>Versión DBMS</th> -->
+                <th>Ambiente</th>
+                <th>IP</th>
+                <!--    <th>PUERTO(S)</th> -->
+                <!--    <th>SID</th> -->
+                <!--    <th>ESQUEMA(S)</th> -->
+                <th>USUARIO(BD)</th>
+                <!--    <th>CONTRASEÑA(BD)</th> -->
+                <!--    <th>TIPO USUARIO</th> -->
+                <!--    <th>SISTEMA OPERATIVO</th> -->
+                <th>USUARIO(SO)</th>
+                <!--    <th>CONTRASEÑA(SO)</th> -->
+                <!--    <th>OBSERVACIONES</th> -->
+                <!--    <th>SE RESPALDA</th> -->
+                <th>SITE</th>
+            </tr>
+            <tr>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'cveInventario', 'startsWith')" placeholder="Buscar por clave" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'idColaborador', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f1"></th>
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'desAplicativo', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f2"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'nomServidor', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'nomDbms', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f3"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'verDbms', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'ambiente', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f4"></th>
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'ip', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f5"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'puerto', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'sid', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'esquema', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'bdUsuario', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f6"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'bdPassword', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'bdUsuarioTipo', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'soNombre', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'soUsuario', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f7"></th>
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'soPassword', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'observaciones', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <!--<th><input pInputText type="text" (input)="dt.filter($event.target.value, 'seRespalda', 'contains')" placeholder="Buscar" class="p-column-filter"  size="10"></th>-->
+                <th><input pInputText type="text" (input)="dt.filter($event.target.value, 'site', 'contains')"
+                        placeholder="Buscar" class="p-column-filter" size="10" [(ngModel)]="f8"></th>
+
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-servidor>
+            <tr [pSelectableRow]="servidor">
+                <!--<td>{{servidor.cveInventario}}</td>-->
+                <td><span class="image-text">{{servidor.idColaborador}}</span></td>
+                <td>{{servidor.desAplicativo}}</td>
+                <!--<td>{{servidor.nomServidor}}</td>-->
+                <td>{{servidor.nomDbms}}</td>
+                <!--<td>{{servidor.verDbms}}</td>-->
+                <td>{{servidor.ambiente}}</td>
+                <td>{{servidor.ip}}</td>
+                <!--<td>{{servidor.puerto}}</td>-->
+                <!--<td>{{servidor.sid}}</td>-->
+                <!--<td>{{servidor.esquema}}</td>-->
+                <td>{{servidor.bdUsuario}}</td>
+                <!--<td>{{servidor.bdPassword}}</td>-->
+                <!--<td>{{servidor.bdUsuarioTipo}}</td>-->
+                <!--<td>{{servidor.soNombre}}</td>-->
+                <td>{{servidor.soUsuario}}</td>
+                <!--<td>{{servidor.soPassword}}</td>-->
+                <!--<td>{{servidor.observaciones}}</td>-->
+                <!--<td>{{servidor.seRespalda}}</td>-->
+                <td>{{servidor.site}}</td>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="8">Inventario de servidores vacio.</td>
+            </tr>
+        </ng-template>
+    </p-table>
+
+</p-panel>

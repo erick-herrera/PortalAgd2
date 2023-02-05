@@ -1,0 +1,203 @@
+@since   Level 2 Document Object Model Core Definition.   
+ */  
+Array.prototype.push = function(args){};
+/**
+  * function reverse()
+  * @returns {Array}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.
+ */  
+Array.prototype.reverse = function(){return [];};
+/**
+  * function shift()
+  * @returns {Object}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.     
+ */  
+Array.prototype.shift = function(){return new Object();};
+/**
+  * function slice(start, end)
+  * @param {Number} start
+  * @param {Number} end
+  * @returns {Array}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.   
+ */  
+Array.prototype.slice = function(start, end){return [];};
+/**
+  * function sort(funct)
+  * @param {Function} funct
+  * @returns {Array}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.
+ */  
+Array.prototype.sort = function(funct){return [];};
+/**
+  * function splice(start, deletecount, items)
+  * @param {Number} start
+  * @param {Number} deletecount
+  * @param {Array} items
+  * @returns {Array}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.  
+ */  
+Array.prototype.splice = function(start, deletecount, items){return [];};
+/**
+  * function unshift(items)
+  * @param {Object} values
+  * @returns {Number}
+  * @memberOf   Array
+  * @see     Array
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.   
+ */  
+Array.prototype.unshift = function(values){return 1;};
+
+/**
+  * Object Function()
+  * @constructor
+  * @extends Object
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+function Function(){};
+Function.prototype = new Object();
+/**
+ * function apply (thisObject, argArray)
+ * @param {Object} thisObject
+ * @param {Array} argArray
+ * @returns {Object}
+ * @since   Standard ECMA-262 3rd. Edition 
+ * @since   Level 2 Document Object Model Core Definition.
+ */ 
+Function.prototype.apply = function(thisArg, argArray){return new Object();};
+/**
+  * function call (thisObject, args)
+  * @param {Object} thisObject
+  * @param {Object} args
+  * @returns {Object}
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.    
+ */ 
+Function.prototype.call = function(thisObject, args){return new Object();};
+/**
+  * property length
+  * @type    Number
+  * @since   Standard ECMA-262 3rd. Edition 
+  * @since   Level 2 Document Object Model Core Definition.    
+ */ 
+Function.prototype.length = 0;
+
+/**
+  * Object Date(s)
+  * @constructor
+  * @param {String} s
+  * @extends Object
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition. 
+ */
+function Date(s){};
+Date.prototype = new Object();
+/**
+ * function UTC(hour, min, sec, ms)
+ * @memberOf Date
+ * @param {Number} hour
+ * @param {Number} min
+ * @param {Number} sec
+ * @param {Number} ms  
+ * @returns {Number}
+ * @static
+ * @since Standard ECMA-262 3rd. Edition
+ * @since Level 2 Document Object Model Core Definition.
+*/
+Date.UTC = function(hour, min, sec, ms){return 0;};
+/**
+  * function parse(string)
+  * @memberOf Date
+  * @param {String} string
+  * @returns {Number}
+  * @static
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.parse = function(string){return 0;};
+/**
+  * function toDateString()
+  * @memberOf Date
+  * @returns {String}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.toDateString = function(){return "";};
+/**
+  * function toTimeString()
+  * @memberOf Date
+  * @returns {String}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.toTimeString = function(){return "";};
+/**
+  * function toLocaleString()
+  * @memberOf Date
+  * @returns {String}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition. 
+ */
+Date.prototype.toLocaleString = function(){return "";};
+/**
+  * function toLocaleDateString()
+  * @memberOf Date
+  * @returns {String}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.toLocaleDateString = function(){return "";};
+/**
+  * function toLocaleTimeString()
+  * @memberOf Date
+  * @returns {String}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.toLocaleTimeString = function(){return "";};
+/**
+  * function valueOf()
+  * @memberOf Date
+  * @returns {Object}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.valueOf = function(){return new Object();};
+/**
+  * function getFullYear()
+  * @memberOf Date
+  * @returns {Number}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.
+ */
+Date.prototype.getFullYear = function(){return 0;};
+/**
+  * function getTime()
+  * @memberOf Date
+  * @returns {Number}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definition.  
+ */
+Date.prototype.getTime = function(){return 0;};
+/**
+  * function getUTCFullYear()
+  * @memberOf Date
+  * @returns {Number}
+  * @since Standard ECMA-262 3rd. Edition
+  * @since Level 2 Document Object Model Core Definitio

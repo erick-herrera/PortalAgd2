@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-dragdrop.umd.js",
+  "module": "../fesm2015/primeng-lts-dragdrop.js",
+  "es2015": "../fesm2015/primeng-lts-dragdrop.js",
+  "esm2015": "../esm2015/dragdrop/primeng-lts-dragdrop.js",
+  "fesm2015": "../fesm2015/primeng-lts-dragdrop.js",
+  "typings": "primeng-lts-dragdrop.d.ts",
+  "metadata": "primeng-lts-dragdrop.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/dragdrop"
+}

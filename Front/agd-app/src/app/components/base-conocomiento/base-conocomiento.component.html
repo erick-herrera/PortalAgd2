@@ -1,0 +1,15 @@
+<app-menu></app-menu>
+
+<p-panel header="{{Labels.TIT_PANT_BASE_CONOCIMIENTO}}">
+    <div class="p-grid p-fluid">
+        
+        <div class="p-col-6 p-md-6" >
+            <div class="p-inputgroup">
+                <span class="p-inputgroup-addon">{{Labels.LBL_CLAVE}}</span>
+                <p-dropdown [options]="itemsApps" [(ngModel)]="aplicativoSel" id="claveSeleccionada" (onChange)="selApp()">
+                </p-dropdown>
+            </div>
+        </div>
+    </div>
+    
+</p-panel>

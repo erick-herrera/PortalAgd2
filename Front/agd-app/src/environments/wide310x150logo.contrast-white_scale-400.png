@@ -1,0 +1,71 @@
+_a, -b.length - 1), -1);
+assert.equal(b.lastIndexOf(buf_a, NaN), 0);
+assert.equal(b.lastIndexOf(buf_a, -Infinity), -1);
+assert.equal(b.lastIndexOf(buf_a, Infinity), 0);
+assert.equal(b.lastIndexOf(buf_bc), 1);
+assert.equal(b.lastIndexOf(buf_bc, 2), 1);
+assert.equal(b.lastIndexOf(buf_bc, -1), 1);
+assert.equal(b.lastIndexOf(buf_bc, -3), 1);
+assert.equal(b.lastIndexOf(buf_bc, -5), 1);
+assert.equal(b.lastIndexOf(buf_bc, -6), -1);
+assert.equal(b.lastIndexOf(buf_bc, NaN), 1);
+assert.equal(b.lastIndexOf(buf_bc, -Infinity), -1);
+assert.equal(b.lastIndexOf(buf_bc, Infinity), 1);
+assert.equal(b.lastIndexOf(buf_f), b.length - 1);
+assert.equal(b.lastIndexOf(buf_z), -1);
+assert.equal(b.lastIndexOf(buf_empty), -1);
+assert.equal(b.lastIndexOf(buf_empty, 1), -1);
+assert.equal(b.lastIndexOf(buf_empty, b.length + 1), -1);
+assert.equal(b.lastIndexOf(buf_empty, Infinity), -1);
+// lastIndexOf number:
+assert.equal(b.lastIndexOf(0x61), 0);
+assert.equal(b.lastIndexOf(0x61, 1), 0);
+assert.equal(b.lastIndexOf(0x61, -1), 0);
+assert.equal(b.lastIndexOf(0x61, -4), 0);
+assert.equal(b.lastIndexOf(0x61, -b.length), 0);
+assert.equal(b.lastIndexOf(0x61, -b.length - 1), -1);
+assert.equal(b.lastIndexOf(0x61, NaN), 0);
+assert.equal(b.lastIndexOf(0x61, -Infinity), -1);
+assert.equal(b.lastIndexOf(0x61, Infinity), 0);
+assert.equal(b.lastIndexOf(0x0), -1);
+
+// Test weird offset arguments.
+// Behaviour should match String.lastIndexOf:
+assert.equal(b.lastIndexOf('b', 0), -1);
+assert.equal(b.lastIndexOf('b', undefined), 1);
+assert.equal(b.lastIndexOf('b', null), -1);
+assert.equal(b.lastIndexOf('b', {}), 1);
+assert.equal(b.lastIndexOf('b', []), -1);
+assert.equal(b.lastIndexOf('b', [2]), 1);
+
+// Test needles longer than the haystack.
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 'ucs2'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 'utf8'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 'latin1'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 'binary'), -1);
+assert.strictEqual(b.lastIndexOf(Buffer.from('aaaaaaaaaaaaaaa')), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 2, 'ucs2'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 3, 'utf8'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 5, 'latin1'), -1);
+assert.strictEqual(b.lastIndexOf('aaaaaaaaaaaaaaa', 5, 'binary'), -1);
+assert.strictEqual(b.lastIndexOf(Buffer.from('aaaaaaaaaaaaaaa'), 7), -1);
+
+// 你好 expands to a total of 6 bytes using UTF-8 and 4 bytes using UTF-16
+assert.strictEqual(buf_bc.lastIndexOf('你好', 'ucs2'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 'utf8'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 'latin1'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 'binary'), -1);
+assert.strictEqual(buf_bc.lastIndexOf(Buffer.from('你好')), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 2, 'ucs2'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 3, 'utf8'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 5, 'latin1'), -1);
+assert.strictEqual(buf_bc.lastIndexOf('你好', 5, 'binary'), -1);
+assert.strictEqual(buf_bc.lastIndexOf(Buffer.from('你好'), 7), -1);
+
+// Test lastIndexOf on a longer buffer:
+var bufferString = new Buffer('a man a plan a canal panama');
+assert.equal(15, bufferString.lastIndexOf('canal'));
+assert.equal(21, bufferString.lastIndexOf('panama'));
+assert.equal(0, bufferString.lastIndexOf('a man a plan a canal panama'));
+assert.equal(-1, bufferString.lastIndexOf('a man a plan a canal mexico'));
+assert.equal(-1, bufferString.lastIn

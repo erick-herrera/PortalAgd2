@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-progressspinner.umd.js",
+  "module": "../fesm2015/primeng-lts-progressspinner.js",
+  "es2015": "../fesm2015/primeng-lts-progressspinner.js",
+  "esm2015": "../esm2015/progressspinner/primeng-lts-progressspinner.js",
+  "fesm2015": "../fesm2015/primeng-lts-progressspinner.js",
+  "typings": "primeng-lts-progressspinner.d.ts",
+  "metadata": "primeng-lts-progressspinner.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/progressspinner"
+}

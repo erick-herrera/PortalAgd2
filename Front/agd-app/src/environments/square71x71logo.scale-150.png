@@ -1,0 +1,6 @@
+gnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __start__
+[ 13712 8564][17 Oct 19:50:18][DIAGNOSTIC] [COVERAGE] [Diagnostic_eventLogHandler::Diagnostic_eventLogHandler::writeEventToLog(s)] __end__ Total: 1 milliseconds.
+[ 13712 8564][17 Oct 19:50:18][TR_CONN_MANAGER] diagnostic_reporter: entering...
+[ 13712 8564][17 Oct 19:50:18][TR_CONN_MANAGER] TR_CONN_MANAGER::CreateAndSendNotification: TrEventManager is not ready yet - ignore this notification - return
+[ 13712 8564][17 Oct 19:50:18][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::_report_event(s)] __end__ Total: 1 milliseconds.
+[ 13712 8564][17 Oct 19:50:18][DIAGNOSTIC] [COVERAGE] [Diagnostic_EventReporter::report_helpd

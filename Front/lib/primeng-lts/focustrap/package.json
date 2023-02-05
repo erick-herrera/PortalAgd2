@@ -1,0 +1,23 @@
+{
+  "main": "../bundles/primeng-lts-focustrap.umd.js",
+  "module_ivy_ngcc": "../__ivy_ngcc__/fesm2015/primeng-lts-focustrap.js",
+  "module": "../fesm2015/primeng-lts-focustrap.js",
+  "es2015_ivy_ngcc": "../__ivy_ngcc__/fesm2015/primeng-lts-focustrap.js",
+  "es2015": "../fesm2015/primeng-lts-focustrap.js",
+  "esm2015": "../esm2015/focustrap/primeng-lts-focustrap.js",
+  "fesm2015_ivy_ngcc": "../__ivy_ngcc__/fesm2015/primeng-lts-focustrap.js",
+  "fesm2015": "../fesm2015/primeng-lts-focustrap.js",
+  "typings": "primeng-lts-focustrap.d.ts",
+  "metadata": "primeng-lts-focustrap.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/focustrap",
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "10.2.2",
+    "fesm2015": "10.2.2",
+    "module": "10.2.2",
+    "typings": "10.2.2"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

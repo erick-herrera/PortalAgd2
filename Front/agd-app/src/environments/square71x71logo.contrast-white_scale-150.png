@@ -1,0 +1,7 @@
+OM_Initializer::Dtor: nothing to do
+[ 12184 8476][17 Oct 19:43:15][proxy_API] ~OS_API
+[ 12184 8476][17 Oct 19:43:15][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::~MultiSiteAutoUpdateManager] __start__
+[ 12184 8476][17 Oct 19:43:15][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::reset] __start__
+[ 12184 8476][17 Oct 19:43:15][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAutoUpdateState] __start__
+[ 12184 8476][17 Oct 19:43:15][Multi-site] [INFO] [MultiSiteAutoUpdateManager::setAutoUpdateState]  moving form state eAutoUpdateState_preInit to state eAutoUpdateState_preInit
+[ 12184 8476][17 Oct 19:43:15][Multi-site] [COVERAGE] [MultiSiteAutoUpdateManager::setAu

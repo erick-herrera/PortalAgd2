@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-inplace.umd.js",
+  "module": "../fesm2015/primeng-lts-inplace.js",
+  "es2015": "../fesm2015/primeng-lts-inplace.js",
+  "esm2015": "../esm2015/inplace/primeng-lts-inplace.js",
+  "fesm2015": "../fesm2015/primeng-lts-inplace.js",
+  "typings": "primeng-lts-inplace.d.ts",
+  "metadata": "primeng-lts-inplace.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/inplace"
+}

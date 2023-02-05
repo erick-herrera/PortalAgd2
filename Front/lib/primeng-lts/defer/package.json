@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-defer.umd.js",
+  "module": "../fesm2015/primeng-lts-defer.js",
+  "es2015": "../fesm2015/primeng-lts-defer.js",
+  "esm2015": "../esm2015/defer/primeng-lts-defer.js",
+  "fesm2015": "../fesm2015/primeng-lts-defer.js",
+  "typings": "primeng-lts-defer.d.ts",
+  "metadata": "primeng-lts-defer.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/defer"
+}

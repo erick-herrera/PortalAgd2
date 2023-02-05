@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-chart.umd.js",
+  "module": "../fesm2015/primeng-lts-chart.js",
+  "es2015": "../fesm2015/primeng-lts-chart.js",
+  "esm2015": "../esm2015/chart/primeng-lts-chart.js",
+  "fesm2015": "../fesm2015/primeng-lts-chart.js",
+  "typings": "primeng-lts-chart.d.ts",
+  "metadata": "primeng-lts-chart.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/chart"
+}

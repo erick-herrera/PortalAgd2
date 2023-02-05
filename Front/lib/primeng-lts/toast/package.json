@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-toast.umd.js",
+  "module": "../fesm2015/primeng-lts-toast.js",
+  "es2015": "../fesm2015/primeng-lts-toast.js",
+  "esm2015": "../esm2015/toast/primeng-lts-toast.js",
+  "fesm2015": "../fesm2015/primeng-lts-toast.js",
+  "typings": "primeng-lts-toast.d.ts",
+  "metadata": "primeng-lts-toast.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/toast"
+}

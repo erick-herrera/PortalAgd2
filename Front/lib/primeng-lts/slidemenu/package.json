@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-slidemenu.umd.js",
+  "module": "../fesm2015/primeng-lts-slidemenu.js",
+  "es2015": "../fesm2015/primeng-lts-slidemenu.js",
+  "esm2015": "../esm2015/slidemenu/primeng-lts-slidemenu.js",
+  "fesm2015": "../fesm2015/primeng-lts-slidemenu.js",
+  "typings": "primeng-lts-slidemenu.d.ts",
+  "metadata": "primeng-lts-slidemenu.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/slidemenu"
+}

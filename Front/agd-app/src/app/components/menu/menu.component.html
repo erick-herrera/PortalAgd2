@@ -1,0 +1,29 @@
+<table style="width: 100%;  background-color: rgb(159, 185, 185); height: 10px;">
+  <tr><td style="text-align: left;">
+<button mat-button [matMenuTriggerFor]="menu" >MENU</button>
+<mat-menu #menu="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="catalogos">CATALOGOS</button>
+  <button mat-menu-item [matMenuTriggerFor]="procesos">PROCESOS</button>
+  <!-- <button mat-menu-item [matMenuTriggerFor]="administracion">ADMINISTRACION</button> -->
+</mat-menu>
+
+<mat-menu #catalogos="matMenu">
+  <button mat-menu-item  [routerLink] = "['/catAplicativo']">APLICATIVOS</button>
+  <!-- <button mat-menu-item >DBMS'S</button> -->
+</mat-menu>
+
+<mat-menu #procesos="matMenu">
+  <button mat-menu-item  (click) = "toRegistroServidor()">REGISTRO SERVIDORES</button>
+  <button mat-menu-item [routerLink] = "['/consultaInventario']">CONSULTA INVENTARIO</button>
+  <button mat-menu-item [routerLink] = "['/baseConocomiento']">BASE DE CONOCIMIENTO</button>
+</mat-menu>
+
+<mat-menu #administracion="matMenu">
+  <button mat-menu-item >REGISTRO USUARIOS</button>
+  <button mat-menu-item >ADMINISTRACIÓN DE PERFILES</button>
+</mat-menu>
+</td><td style="text-align: right;">
+
+<p-splitButton label="Sesion iniciada:{{nombreUsuario}}" [model]="items" styleClass="p-button-link"></p-splitButton>
+</td></tr>
+</table>

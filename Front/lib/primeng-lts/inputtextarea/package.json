@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-inputtextarea.umd.js",
+  "module": "../fesm2015/primeng-lts-inputtextarea.js",
+  "es2015": "../fesm2015/primeng-lts-inputtextarea.js",
+  "esm2015": "../esm2015/inputtextarea/primeng-lts-inputtextarea.js",
+  "fesm2015": "../fesm2015/primeng-lts-inputtextarea.js",
+  "typings": "primeng-lts-inputtextarea.d.ts",
+  "metadata": "primeng-lts-inputtextarea.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/inputtextarea"
+}

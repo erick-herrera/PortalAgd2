@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-virtualscroller.umd.js",
+  "module": "../fesm2015/primeng-lts-virtualscroller.js",
+  "es2015": "../fesm2015/primeng-lts-virtualscroller.js",
+  "esm2015": "../esm2015/virtualscroller/primeng-lts-virtualscroller.js",
+  "fesm2015": "../fesm2015/primeng-lts-virtualscroller.js",
+  "typings": "primeng-lts-virtualscroller.d.ts",
+  "metadata": "primeng-lts-virtualscroller.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/virtualscroller"
+}

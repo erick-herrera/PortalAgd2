@@ -1,0 +1,11 @@
+{
+  "main": "../bundles/primeng-lts-keyfilter.umd.js",
+  "module": "../fesm2015/primeng-lts-keyfilter.js",
+  "es2015": "../fesm2015/primeng-lts-keyfilter.js",
+  "esm2015": "../esm2015/keyfilter/primeng-lts-keyfilter.js",
+  "fesm2015": "../fesm2015/primeng-lts-keyfilter.js",
+  "typings": "primeng-lts-keyfilter.d.ts",
+  "metadata": "primeng-lts-keyfilter.metadata.json",
+  "sideEffects": false,
+  "name": "primeng-lts/keyfilter"
+}
